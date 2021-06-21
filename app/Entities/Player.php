@@ -6,11 +6,11 @@ use CodeIgniter\Entity\Entity;
 
 class Player extends Entity
 {
-    // protected int $player_id;
-    // protected string $player_name;
-    // protected string $player_img;
-
-    protected $datamap = [];
+    protected $datamap = [
+        'id' => 'player_id',
+        'name' => 'player_name',
+        'img' => 'player_img',
+    ];
     protected $dates   = [
         'created_at',
         'updated_at',
